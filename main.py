@@ -106,3 +106,7 @@ class SendSpotifyLove:
 
 def main(*args, **kwargs):
     SendSpotifyLove().run()
+
+
+if __name__ == '__main__':
+    main()
