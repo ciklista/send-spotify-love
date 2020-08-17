@@ -14,7 +14,7 @@ trendy then SMS, that does the job. Feel free to reach out if you want to contri
 ### Prerequisite
 - A Spotify developers account and a Spotify app. Check the 
 [Spotify documentation](https://developer.spotify.com/documentation/web-api/quick-start/) for further instructions. Also
-refer to the [section](Note-on-the-Spotify-authentication) below.
+refer to the [section](#note-on-the-spotify-authentication) below.
 - A Twilio account. Refer to the 
 [Twilio documenation](https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account) 
 for information on how to get a free trial account.
@@ -35,12 +35,14 @@ script for the first time make sure to run it on a system that has a browser. Co
 redirected to to the console to create a cache file that holds your OAuth token. Future runs will work with that cache file.
 
 *Long*: As the script is requesting user specific data, we need to go through a **User Authorization** flow (basically, we need
-to log into our Spotify Account, get a token, store that somewhere. That token is then used to make the requests.). 
+to log into our Spotify account, get a token, store that somewhere. That token is then used to make the requests.). 
 The basic principle behind this is [OAuth](https://oauth.net/articles/authentication/). This process includes a callback
 URI that it can call and sent the token to once you have successfully logged into the service. For the purpose of this 
 script, you can set the callback URI in your Spotify app to any URI (like ``https://localhost:8080``). Make sure that 
 the URI in ``config.ini`` matches your URI in the Spotify app settings.
+
 Find out more on the Spotify authorization [here](https://developer.spotify.com/documentation/general/guides/authorization-guide/).
+
 When you run the script for the first time, the spotipy library will try to open a browser (make sure that you are 
 running the script somewhere where there is a browser) and will walk you through the Spotify login process. Once done,
 don't get distracted by the error page, simply copy the link that your browser has tried to open to the python console
