@@ -25,8 +25,11 @@ for information on how to get a free trial account.
 
 ### Setup 
 Fill out all necessary configuration in the ``config.ini`` file. Phone numbers must be provided in 
-[E.164](https://www.twilio.com/docs/glossary/what-e164) format. Call the ```main()``` function and start sending 
+[E.164](https://www.twilio.com/docs/glossary/what-e164) format. Run `python3 -u main.py` and start sending 
 [great music](https://open.spotify.com/playlist/3MGILGIMK6mgJZvvmDI4Kg?si=Q_O_0evkQlGN8ijkSYyQcA).
+
+The additional `main(*args, **kwargs)` function is used as an entry point for FAAS environments.
+
 
 ### Note on the Spotify authentication
 
